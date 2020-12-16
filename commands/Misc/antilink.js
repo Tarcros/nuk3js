@@ -1,7 +1,7 @@
 const db = require('quick.db')
 const Discord = require('discord.js')
 
-module.exports.run = async (bot, message, args) => {e
+module.exports.run = async (client, message, args) => {
 
     if (!message.member.hasPermission('MANAGE_GUILD'))
         return message.channel.send('<:no:772119189225734154> **Vous devez avoir le privilège `«MANAGE_GUILD»` pour utiliser cette commande!**')
